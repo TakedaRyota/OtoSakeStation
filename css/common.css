@@ -1,0 +1,27 @@
+/* ==========================================
+このファイルは全ての画面に適用するスタイルシート 
+============================================= */
+
+/* --- トップロゴ --- */
+.top-font>img {
+  width: auto;
+  height: 50px;
+}
+@media (min-width: 992px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .hamburger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
