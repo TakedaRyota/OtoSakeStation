@@ -1,0 +1,106 @@
+/* ==========================================
+トップページに適用するスタイルシート 
+============================================= */
+
+/* --- コンセプトエリア --- */
+.concept-music,
+.concept-osake {
+  position: relative;
+}
+.concept-music>img,
+.concept-osake>img {
+  width: 60%;
+  height: auto;
+}
+.concept-osake>img {
+  margin-left: 40%;
+}
+.concept-music>h1 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 10vw;
+  text-shadow: 2px 2px 0 #000000;
+}
+.concept-osake>h1 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 10vw;
+  text-shadow: 2px 2px 0 #000000;
+}
+.concept-detail-text {
+  display: inline;
+}
+.concept-music>.concept-detail-text {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 40%;
+  font-size: 3vw;
+}
+.concept-osake>.concept-detail-text {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 40%;
+  font-size: 3vw;
+}
+.concept-area {
+  position: relative;
+}
+.concept-area>.cross {
+  position: absolute;
+  font-size: 30vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+/* --- 今後のイベント欄 --- */
+.event-view {
+  padding: 10px 10px;
+}
+.event-link {
+  text-decoration: none;
+  color: #000000;
+}
+.event-link-card {
+  border-radius: 5px;
+  border: 2px solid #f6f6f6;
+  margin: 10px 20px;
+  box-shadow: 3px 3px 6px 0px gray;
+}
+.event-date-area {
+  width: 130px;
+  min-width: 130px;
+  padding: 0 5px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+.event-date-area>.month,
+.event-date-area>.date {
+  font-size: 30px;
+}
+.event-link-card>ul {
+  padding: 5px;
+  list-style: none;
+}
+.event-link-card .event-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* --- フッター --- */
+footer {
+  background-color: #4e4b46;
+}
+@media (min-width: 992px) {
+  /* --- 今後のイベント欄 --- */
+  .event-link-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 2px 2px 0px 0px #0004ff;
+  }
+}
+@media (max-width: 992px) {
+
+}

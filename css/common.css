@@ -2,14 +2,31 @@
 このファイルは全ての画面に適用するスタイルシート 
 ============================================= */
 
+/* --- ヘッダー --- */
+header {
+  position: fixed;
+  z-index: 999;
+}
 /* --- トップロゴ --- */
 .top-font>img {
   width: auto;
   height: 50px;
 }
+/* --- メイン --- */
+main {
+  min-height: 100vh;
+}
 @media (min-width: 992px) {
+  /* --- ヘッダー --- */
+  header {
+    width: 100%;
+  }
   .hamburger-menu {
     display: none;
+  }
+  /* --- メイン --- */
+  main {
+    padding-top: 70px;
   }
 }
 @media (max-width: 992px) {
@@ -23,5 +40,6 @@
     position: absolute;
     top: 0;
     right: 0;
+    position: fixed;
   }
 }
