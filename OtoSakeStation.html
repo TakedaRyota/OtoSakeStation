@@ -24,6 +24,7 @@
   <link rel="stylesheet" type="text/css" href="./css/common.css">
   <link rel="stylesheet" type="text/css" href="./css/nav.css">
   <link rel="stylesheet" type="text/css" href="./css/hamburger.css">
+  <link rel="stylesheet" type="text/css" href="./css/animation.css">
   <link rel="stylesheet" type="text/css" href="./css/index.css">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5928010918791350"
@@ -70,7 +71,8 @@
       <img class="back-img" alt="top-image" src="./image/23828809_m.jpg"/>
       <img class="top-logo" alt="top-logo" src="./image/top-logo.png"/>
     </div>
-    <div class="concept-area">
+    <!-- コンセプト -->
+    <div id="concept-area">
       <h1 class="title-font">Concept</h1>
       <div class="concept-music">
         <img alt="live-img" src="./image/people-in-a-festival.jpg">
@@ -90,8 +92,9 @@
       </div>
     </div>
     <!-- イベント -->
-    <div class="event-view">
+    <div id="event-view">
       <h1 class="title-font">EVENT</h1>
+      <div class="non-event d-none">現在、予定されているイベントはありません。</div>
       <div class="row">
         <div class="col-lg">
           <a class="event-link" href="#">
@@ -114,6 +117,11 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <!-- 上部に戻る -->
+    <div id="top-up-area">
+      <button class="btn btn-dark top-up-btn" type="button">TOP</button>
     </div>
   </main>
 
