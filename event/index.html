@@ -6,54 +6,52 @@
   <meta http-equiv="Cache-Control" content="no-cache">
   <meta name="description" content="『音酒ステーション』公式サイトです。
   『音楽とお酒が好きな人が気軽に集える空間』をコンセプトに、熱いライブと美味しいお酒が楽しめるようなイベントになります。">
-  <title>音酒ステーション</title>
+  <title>音酒ステーション/Event</title>
   <!--ファビコン-->
-  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="../favicon.ico">
 
-  <script src="./lib/js/jquery-3.6.0.min.js"></script>
-  <script src="./lib/js/bootstrap.min.js"></script>
-  <script src="./lib/js/avantui.js"></script>
-  <script src="./js/common.js"></script>
-  <script src="./js/nav.js"></script>
+  <script src="../lib/js/jquery-3.6.0.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../lib/js/avantui.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/nav.js"></script>
   <script src="./js/index.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="./lib/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./lib/css/avantui.min.css">
+  <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../lib/css/avantui.min.css">
 
-  <link rel="stylesheet" type="text/css" href="./css/color.css">
-  <link rel="stylesheet" type="text/css" href="./css/common.css">
-  <link rel="stylesheet" type="text/css" href="./css/nav.css">
-  <link rel="stylesheet" type="text/css" href="./css/hamburger.css">
-  <link rel="stylesheet" type="text/css" href="./css/animation.css">
+  <link rel="stylesheet" type="text/css" href="../css/color.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/nav.css">
+  <link rel="stylesheet" type="text/css" href="../css/hamburger.css">
+  <link rel="stylesheet" type="text/css" href="../css/animation.css">
   <link rel="stylesheet" type="text/css" href="./css/index.css">
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5928010918791350"
-   crossorigin="anonymous"></script>
 </head>
 <body class="bg-background">
   <header class="bg-background">
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand top-font" href="#">
-        <img alt="OtoSakeSta-logo" src="./image/top-logo.png"/>
+      <a class="navbar-brand top-font" href="../">
+        <img alt="OtoSakeSta-logo" src="../image/top-logo.png"/>
       </a>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">About
+          <a class="nav-link" href="../about/">About
             <div>イベントについて</div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Event
+          <a class="nav-link" href="../event/">Event
             <div>イベント一覧</div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ticket
+          <a class="nav-link" href="../ticket/">Ticket
             <div>販売中のチケット</div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact
+          <a class="nav-link" href="../contact/">Contact
             <div>お問い合せ</div>
           </a>
         </li>
@@ -66,34 +64,10 @@
     <span></span>
   </div>
 
-  <main>
-    <div class="top-animation">
-      <img class="back-img" alt="top-image" src="./image/23828809_m.jpg"/>
-      <img class="top-logo" alt="top-logo" src="./image/top-logo.png"/>
-    </div>
-    <!-- コンセプト -->
-    <div id="concept-area">
-      <h1 class="title-font">Concept</h1>
-      <div class="concept-music">
-        <img alt="live-img" src="./image/people-in-a-festival.jpg">
-        <div class="concept-detail-text">
-          『音楽とお酒が好きな人が気軽に集える空間』
-        </div>
-        <h1 class="music-text">MUSIC</h1>
-      </div>
-      <div class="concept-osake">
-        <div class="concept-detail-text">熱いライブとお酒を楽しめる環境を提供すること</div>
-        <img alt="barcounter-img" src="./image/23831053_m.jpg">
-        <h1 class="osake-text">Sake</h1>
-      </div>
-      <div class="cross">
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <!-- イベント -->
+  <main class="container">
+    <!-- 今後のイベント -->
     <div id="event-view">
-      <h1 class="title-font">EVENT</h1>
+      <h1 class="title-font">今後のイベント</h1>
       <div class="non-event d-none">現在、予定されているイベントはありません。</div>
       <div class="row">
         <div class="col-lg">
@@ -118,7 +92,27 @@
         </div>
       </div>
     </div>
+    <div class="divider divider-diamond"></div>
+    <!-- 過去のイベント -->
+    <button id="old-event-open-btn" type="button" class="btn btn-outline-info rounded-pill">過去のイベントを見る</button>
 
+    <div id="old-event-view">
+      <h1 class="title-font">過去のイベント</h1>
+      <div class="non-event">開催実績はありません。</div>
+      <div class="row">
+        <div class="col-lg">
+        
+        </div>
+      </div>
+      <button id="old-event-close-btn" type="button" class="btn btn-outline-info rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="divider divider-diamond"></div>
+    
     <!-- 上部に戻る -->
     <div id="top-up-area">
       <button class="btn btn-dark top-up-btn" type="button">TOP</button>

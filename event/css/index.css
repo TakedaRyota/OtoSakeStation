@@ -1,0 +1,72 @@
+/* ==========================================
+Eventに適用するスタイルシート 
+============================================= */
+.title-font {
+  text-shadow: 3px 3px 0 #bcbcbc;
+  color: #fff200;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+/* --- 今後のイベント欄 --- */
+.event-link {
+  text-decoration: none;
+  color: #000000;
+}
+.event-link-card {
+  border-radius: 5px;
+  border: 2px solid #f6f6f6;
+  margin: 10px 20px;
+  box-shadow: 3px 3px 6px 0px gray;
+}
+.event-date-area {
+  padding: 0 5px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+.event-date-area>.month,
+.event-date-area>.date {
+  font-size: 30px;
+}
+.event-link-card>ul {
+  padding: 5px;
+  list-style: none;
+  margin-bottom: 0;
+}
+.event-link-card .event-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.event-link-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 2px 2px 0px 0px #0004ff;
+}
+
+/* --- 過去のイベント --- */
+
+#old-event-view {
+  display: none;
+}
+#old-event-view.active {
+  display: block;
+}
+#old-event-open-btn,
+#old-event-close-btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 2px;
+}
+
+@media (min-width: 992px) {
+  /* --- 今後のイベント欄 --- */
+  .event-link-card {
+    display: flex;
+  }
+  .event-date-area {
+    width: 130px;
+    min-width: 130px;
+  }
+}
+@media (max-width: 992px) {
+
+}

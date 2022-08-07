@@ -1,0 +1,93 @@
+/* ==========================================
+Aboutに適用するスタイルシート 
+============================================= */
+.title-font {
+  text-shadow: 3px 3px 0 #bcbcbc;
+  color: #fff200;
+  font-weight: bold;
+  font-size: 6vw;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+/* --- コンセプトエリア --- */
+#concept-area {
+  position: relative;
+}
+.concept-music,
+.concept-osake {
+  position: relative;
+}
+.concept-music>img,
+.concept-osake>img {
+  width: 60%;
+  height: auto;
+}
+.concept-osake>img {
+  margin-left: 40%;
+}
+.concept-music>h1 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 10vw;
+  text-shadow: 2px 2px 0 #000000;
+}
+.concept-osake>h1 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 10vw;
+  text-shadow: 2px 2px 0 #000000;
+}
+.concept-detail-text {
+  display: inline;
+}
+.concept-music>.concept-detail-text {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 40%;
+  font-size: 3vw;
+}
+.concept-osake>.concept-detail-text {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 40%;
+  font-size: 3vw;
+}
+#concept-area>.cross>span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vw;
+  height: 2vw;
+  background-color: #fff200;
+}
+#concept-area>.cross>span:nth-child(1) {
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+#concept-area>.cross>span:nth-child(2) {
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+
+/* --- モットーエリア --- */
+#motto-area .motto-content {
+  background-color: #bcbcbc;
+  padding: 15px;
+  box-shadow: 3px 3px 0 0 #fff200;
+  color: #000000;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+#motto-area .motto-content:hover {
+  font-weight: bold;
+  color: #ff8c11;
+  text-shadow: 2px 2px 0#fff200;
+}
+@media (min-width: 992px) {
+
+}
+@media (max-width: 992px) {
+
+}
