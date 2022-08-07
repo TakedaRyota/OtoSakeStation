@@ -25,13 +25,11 @@
   transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
 }
-.top-animation>img.top-logo:hover {
-  transition: all 1s ease 0s;
-  background-color: #7777779b;
-  border: none;
-  box-shadow: 0 0 20px 20px #7777779b;
-}
+
 /* --- コンセプトエリア --- */
+#concept-area {
+  position: relative;
+}
 .concept-music,
 .concept-osake {
   position: relative;
@@ -75,25 +73,49 @@
   width: 40%;
   font-size: 3vw;
 }
-.concept-area {
-  position: relative;
-}
-.concept-area>.cross>span {
+#concept-area>.cross>span {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 20vw;
   height: 2vw;
   background-color: #fff200;
+  display: none;
 }
-.concept-area>.cross>span:nth-child(1) {
+#concept-area>.cross>span:nth-child(1) {
   transform: translateY(-50%) translateX(-50%) rotate(-45deg);
 }
-.concept-area>.cross>span:nth-child(2) {
+#concept-area>.cross>span:nth-child(1).cross-anime01 {
+  display: inline-flex;
+  animation-name: showCrossBar01;
+  animation-duration: 1.5s;
+}
+@keyframes showCrossBar01 {
+  0% {
+    transform: translateY(-50%) translateX(300%) rotate(0);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  }
+}
+#concept-area>.cross>span:nth-child(2) {
   transform: translateY(-50%) translateX(-50%) rotate(45deg);
 }
+#concept-area>.cross>span:nth-child(2).cross-anime02 {
+  display: inline-flex;
+  animation-name: showCrossBar02;
+  animation-duration: 1.5s;
+}
+@keyframes showCrossBar02 {
+  0% {
+    transform: translateY(-50%) translateX(-350%) rotate(0);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  }
+}
 /* --- 今後のイベント欄 --- */
-.event-view {
+#event-view {
   padding: 10px 10px;
 }
 .event-link {
@@ -118,23 +140,46 @@
 .event-link-card>ul {
   padding: 5px;
   list-style: none;
+  margin-bottom: 0;
 }
 .event-link-card .event-name {
   font-size: 20px;
   font-weight: bold;
+}
+.event-link-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 2px 2px 0px 0px #0004ff;
+}
+
+/* --- 上部に戻る --- */
+#top-up-area {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  position: relative;
+}
+.top-up-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 /* --- フッター --- */
 footer {
   background-color: #4e4b46;
 }
 @media (min-width: 992px) {
+  /* --- トップ画面 --- */
+  .top-animation>img.top-logo:hover {
+    transition: all 1s ease 0s;
+    background-color: #7777779b;
+    border: none;
+    box-shadow: 0 0 20px 20px #7777779b;
+  }
   /* --- 今後のイベント欄 --- */
   .event-link-card {
     display: flex;
-  }
-  .event-link-card:hover {
-    transform: translate(-5px, -5px);
-    box-shadow: 2px 2px 0px 0px #0004ff;
   }
   .event-date-area {
     width: 130px;
@@ -142,5 +187,10 @@ footer {
   }
 }
 @media (max-width: 992px) {
-
+  /* --- トップ画面 --- */
+  .top-animation>img.top-logo {
+    background-color: #7777779b;
+    border: none;
+    box-shadow: 0 0 20px 20px #7777779b;
+  }
 }

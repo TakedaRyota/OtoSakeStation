@@ -2,6 +2,11 @@
 このファイルは全ての画面に適用するスタイルシート 
 ============================================= */
 
+html, body {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
 /* --- ヘッダー --- */
 header {
   position: fixed;
@@ -37,9 +42,8 @@ main {
     display: block;
   }
   .hamburger-menu {
-    position: absolute;
+    position: absolute !important;
     top: 0;
     right: 0;
-    position: fixed;
   }
 }
