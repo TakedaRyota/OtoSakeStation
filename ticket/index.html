@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="description" content="『音酒ステーション』公式サイトです。
+  『音楽とお酒が好きな人が気軽に集える空間』をコンセプトに、熱いライブと美味しいお酒が楽しめるようなイベントになります。">
+  <title>音酒ステーション/Ticket</title>
+  <!--ファビコン-->
+  <link rel="icon" href="../favicon.ico">
+
+  <script src="../lib/js/jquery-3.6.0.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../lib/js/avantui.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="./js/index.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../lib/css/avantui.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/color.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/nav.css">
+  <link rel="stylesheet" type="text/css" href="../css/hamburger.css">
+  <link rel="stylesheet" type="text/css" href="../css/animation.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+</head>
+<body class="bg-background">
+  <header class="bg-background">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand top-font" href="../OtoSakeStation.html">
+        <img alt="OtoSakeSta-logo" src="../image/top-logo.png"/>
+      </a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../about/">About
+            <div>イベントについて</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../event/">Event
+            <div>イベント一覧</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../ticket/">Ticket
+            <div>販売中のチケット</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact
+            <div>お問い合せ</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hamburger-menu" id="menu01">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <main class="container">
+    <!-- 今後のイベント -->
+    <div id="event-view">
+      <h1 class="title-font">販売中のチケット</h1>
+      <div class="non-event d-none">現在、販売中のイベントはありません。</div>
+      <div class="row">
+        <div class="col-lg">
+          <div class="d-flex ticket-area">
+            <div class="main-ticket-area">
+              <div class="event-name">Ibaraki Idol Festival 2022</div>
+              <div class="event-date">
+                <span>2022</span>年
+                <span>10</span>月
+                <span>10</span>日(土)
+              </div>
+              <div class="place">Shibuya O-EAST</div>
+              <a class="next-event-site" href="#">詳しくはイベントページへ</a>
+            </div>
+            <div class="half-ticket-area">
+              <div>チケット購入サイト</div>
+              <button class="btn btn-success" type="button">
+                <a class="next-ticket-site" href="#">
+                  購入する
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 上部に戻る -->
+    <div id="top-up-area">
+      <button class="btn btn-dark top-up-btn" type="button">TOP</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="text-center text-white">音酒ステーション実行委員</div>
+  </footer>
+</body>
+</html>

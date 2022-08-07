@@ -1,0 +1,52 @@
+/* ==========================================
+Ticketに適用するスタイルシート 
+============================================= */
+
+.title-font {
+  text-shadow: 3px 3px 0 #bcbcbc;
+  color: #fff200;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+/* --- チケットエリア --- */
+#event-view .ticket-area {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #189300;
+  border-radius: 1px;
+  color: #000000;
+  margin: 10px 0;
+}
+#event-view .ticket-area:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0 0 #189300;
+}
+#event-view .main-ticket-area {
+  background-color: #cdffc3;
+  border: none;
+  padding: 5px;
+  width: 80%;
+}
+#event-view .half-ticket-area {
+  border-left: 3px dashed #000000;
+  padding: 5px;
+  min-width: 160px;
+  width: 20%;
+  text-align: center;
+  bottom: 0;
+}
+#event-view .half-ticket-area>button>a {
+  text-decoration: none;
+  color: #000000;
+}
+#event-view .event-name {
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+
+}
+@media (max-width: 992px) {
+
+}
