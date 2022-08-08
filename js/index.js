@@ -22,17 +22,19 @@ $(function() {
     const scrollTop = $(window).scrollTop();
     const scrollBottom = scrollTop + $(window).height();
     if (scrollTop >= triggerPositionTop02) {
-      $('#concept-area>.cross>span:nth-child(1)').addClass('cross-anime01');
-      $('#concept-area>.cross>span:nth-child(2)').addClass('cross-anime02');
+      $('.cross>span').show();
+      $('#concept-area>.cross>span:nth-child(1)').addClass('rotateInAnimation01');
+      $('#concept-area>.cross>span:nth-child(2)').addClass('rotateInAnimation02');
     }
 
 
     if (scrollBottom > triggerPositionTop01) {
       $('#concept-area').addClass('fadeUpAnimation01');
     } else {
+      $('.cross>span').hide();
       $('#concept-area').removeClass('fadeUpAnimation01');
-      $('#concept-area>.cross>span:nth-child(1)').removeClass('cross-anime01');
-      $('#concept-area>.cross>span:nth-child(2)').removeClass('cross-anime02');
+      $('#concept-area>.cross>span:nth-child(1)').removeClass('rotateInAnimation01');
+      $('#concept-area>.cross>span:nth-child(2)').removeClass('rotateInAnimation02');
     }
   }
 

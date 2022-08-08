@@ -78,35 +78,10 @@
 #concept-area>.cross>span:nth-child(1) {
   transform: translateY(-50%) translateX(-50%) rotate(-45deg);
 }
-#concept-area>.cross>span:nth-child(1).cross-anime01 {
-  display: inline-flex;
-  animation-name: showCrossBar01;
-  animation-duration: 1.5s;
-}
-@keyframes showCrossBar01 {
-  0% {
-    transform: translateY(-50%) translateX(300%) rotate(0);
-  }
-  100% {
-    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
-  }
-}
 #concept-area>.cross>span:nth-child(2) {
   transform: translateY(-50%) translateX(-50%) rotate(45deg);
 }
-#concept-area>.cross>span:nth-child(2).cross-anime02 {
-  display: inline-flex;
-  animation-name: showCrossBar02;
-  animation-duration: 1.5s;
-}
-@keyframes showCrossBar02 {
-  0% {
-    transform: translateY(-50%) translateX(-350%) rotate(0);
-  }
-  100% {
-    transform: translateY(-50%) translateX(-50%) rotate(45deg);
-  }
-}
+
 /* --- 今後のイベント欄 --- */
 .event-link {
   text-decoration: none;

@@ -17,6 +17,7 @@ Aboutに適用するスタイルシート
 }
 .concept-osake>img {
   margin-left: 40%;
+  visibility: hidden;
 }
 .concept-music>h1 {
   position: absolute;
@@ -31,6 +32,7 @@ Aboutに適用するスタイルシート
   right: 20px;
   font-size: 10vw;
   text-shadow: 2px 2px 0 #000000;
+  visibility: hidden;
 }
 .concept-detail-text {
   display: inline;
@@ -56,6 +58,7 @@ Aboutに適用するスタイルシート
   width: 20vw;
   height: 2vw;
   background-color: #fff200;
+  display: none;
 }
 #concept-area>.cross>span:nth-child(1) {
   transform: translateY(-50%) translateX(-50%) rotate(-45deg);
