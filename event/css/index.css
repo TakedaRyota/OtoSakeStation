@@ -1,13 +1,7 @@
 /* ==========================================
 Eventに適用するスタイルシート 
 ============================================= */
-.title-font {
-  text-shadow: 3px 3px 0 #bcbcbc;
-  color: #fff200;
-  font-weight: bold;
-  padding-top: 50px;
-  padding-left: 10px;
-}
+
 /* --- 今後のイベント欄 --- */
 .event-link {
   text-decoration: none;

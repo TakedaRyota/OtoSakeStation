@@ -2,10 +2,15 @@
 全てのhtmlに適用するJS
 ============================ */
 
-const VERSION = '1.0.0';
-
 $(function () {
-  $('.version-info').text(VERSION);
+  $('html,body').animate({ scrollTop: 0 }, '1');
+
+  /**
+   * TOPボタン押下時
+   */
+  $('.top-up-btn').on('click', function() {
+    $('html,body').animate({ scrollTop: 0 }, '1');
+  });
 
   /* 高さvhの調整 */
   const vh = $(window).height() * 0.01;
