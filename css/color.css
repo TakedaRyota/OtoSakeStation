@@ -3,8 +3,12 @@
 ============================================= */
 
 .bg-background {
-  background-color: #260d00;
-  color: #ffffff;
+  background-color: transparent;
+  color: #000000;
+}
+.bg-header {
+  background-color: #ceedff;
+  color: #000000;
 }
 .bg-card {
   background-color: #b9b9b9;

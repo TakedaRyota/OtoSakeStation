@@ -7,13 +7,12 @@
   .nav-link {
     padding: 0 1rem !important;
     font-size: large;
-    color: #ffffff;
     text-align: center;
   }
   .nav-link>div {
     visibility: hidden;
     font-size: small;
-    border-top: solid 1px #04f4fd;
+    border-top: solid 1px #0468fd;
   }
   .nav-item:hover {
     transition : all 0.5s ease 0s;
@@ -26,7 +25,7 @@
   .nav-item:hover>.nav-link,
   .nav-item:hover>.nav-link>div {
     transition : all 0.5s ease 0s;
-    color: #04f4fd;
+    color: #0468fd;
   }
 }
 @media (max-width: 992px) {
@@ -35,18 +34,22 @@
     height: 100vh;
     height: 100dvh;
     position: absolute;
-    background-color: #260d00;
+    background-color: #ceedff;
   }
   .nav-link {
     padding: 0 1rem !important;
     font-size: 30px;
-    color: #ffffff;
+    color: #346ced;
     text-align: left;
   }
   .nav-link>div {
     font-size: small;
   }
   .nav-item:nth-child(2n+1) {
-    background-color: #383838;
+    background-color: #ceedff;
+  }
+  .nav-item:hover {
+    transition : all 0.5s ease 0s;
+    background-color: #ffffff9f;
   }
 }

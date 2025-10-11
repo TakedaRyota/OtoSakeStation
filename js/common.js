@@ -8,7 +8,7 @@ $(function () {
   /**
    * TOPボタン押下時
    */
-  $('.top-up-btn').on('click', function() {
+  $('.scroll-top').on('click', function() {
     $('html,body').animate({ scrollTop: 0 }, '1');
   });
 

@@ -2,84 +2,24 @@
 トップページに適用するスタイルシート 
 ============================================= */
 
-/* --- トップ画面 --- */
-.top-animation,
-.top-animation>.back-img {
+/* --- トップエリア --- */
+.top-area {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  height: 100dvh;
-  margin-bottom: 50px;
 }
-.top-animation>img.top-logo {
-  width: 80%;
-  height: auto;
+.event-title-area {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
 }
-
-/* --- コンセプトエリア --- */
-#concept-area {
-  position: relative;
-}
-.concept-music,
-.concept-osake {
-  position: relative;
-}
-.concept-music>img,
-.concept-osake>img {
-  width: 60%;
-  height: auto;
-}
-.concept-osake>img {
-  margin-left: 40%;
-}
-.concept-music>h1 {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  font-size: 10vw;
-  text-shadow: 2px 2px 0 #000000;
-}
-.concept-osake>h1 {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 10vw;
-  text-shadow: 2px 2px 0 #000000;
-}
-.concept-detail-text {
-  display: inline;
-  position: absolute;
-  width: 40%;
-  font-size: 3vw;
-  padding: 5px;
-}
-.concept-music>.concept-detail-text {
-  top: 20%;
-  right: 0;
-}
-.concept-osake>.concept-detail-text {
-  top: 20%;
-  left: 0;
-}
-#concept-area>.cross>span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20vw;
-  height: 2vw;
-  background-color: #fff200;
-  display: none;
-}
-#concept-area>.cross>span:nth-child(1) {
-  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
-}
-#concept-area>.cross>span:nth-child(2) {
-  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+.event-title-area>* {
+  transform: rotateZ(340deg);
+  font-size: 10vh;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 /* --- 今後のイベント欄 --- */
@@ -114,6 +54,66 @@
 .event-link-card:hover {
   transform: translate(-5px, -5px);
   box-shadow: 2px 2px 0px 0px #0004ff;
+}
+
+/* --- 背景スタイル --- */
+.bg-image {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-attachment: fixed;
+  background-image: url(../image/background.png);
+  background-size: cover;
+  background-position: center;
+}
+/* --- 円形 --- */
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  min-width: 100px;
+  max-width: 30vw;
+  max-height: 30vw;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.planning-text {
+  border: 1px solid #f21a1d;
+}
+.production-text {
+  border: 1px solid #ff822E;
+}
+.operation-text {
+  border: 1px solid #0d6efd;
+}
+.planning-text > span {
+  color: #f21a1d;
+}
+.production-text > span {
+  color: #ff822E;
+}
+.operation-text > span {
+  color: #0d6efd;
+}
+.planning-text > span,
+.production-text > span,
+.operation-text > span {
+  font-size: large;
+  font-weight: bold;
+}
+.navbar-expand-lg {
+  min-height: fit-content;
+  padding: 5px 0;
+}
+
+.card {
+  box-shadow: -4px 4px 5px 0px #b7b7b7a0;
+  border-color: #bbbbbb;
+  transition-duration: 0.5s;
+}
+.card:hover {
+  color: #000000;
+  transform: scale(1.05,1.05);
+  transition-duration: 0.5s;
 }
 
 @media (min-width: 992px) {

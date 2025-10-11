@@ -4,6 +4,8 @@
 
 html, body {
   width: 100%;
+  height: 100vh;
+  height: 100dvh;
   height: auto;
   position: relative;
   overflow-x: hidden;
@@ -24,33 +26,50 @@ main {
   min-height: calc(100dvh - 24px);
 }
 /* --- 上部に戻る --- */
-#top-up-area {
-  width: 100%;
-  height: 150px;
-  text-align: center;
-  position: relative;
+.scroll-top {
+  display: none;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #ceedff;
+  color: #346ced;
+  border: solid 2px #346ced;
+  border-radius: 50%;
 }
-.top-up-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+.scroll-top > .triangle {
+  width: 0;
+  height: 20px;
+  border-right: solid 18px transparent;
+  border-bottom: solid 18px #346ced;
+  border-left: solid 18px transparent;
 }
 /* --- フッター --- */
 footer {
-  background-color: #4e4b46;
+  background-color: #ceedff;
+}
+footer > div {
+  color: #346ced;
 }
 /* --- 項目名 --- */
 .title-font {
-  color: #fff200;
+  color: #3240dc;
   font-weight: bold;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-left: 10px;
+  text-shadow: 3px 3px 0 #bcbcbc;
 }
 .row {
   margin-left: 0;
   margin-right: 0;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
 }
 @media (min-width: 992px) {
   /* --- ヘッダー --- */
@@ -64,10 +83,6 @@ footer {
   main {
     padding-top: 70px;
   }
-  /* --- 項目名 --- */
-  .title-font {
-    text-shadow: 3px 3px 0 #bcbcbc;
-  }
 }
 @media (max-width: 992px) {
   .navbar {
@@ -80,9 +95,5 @@ footer {
     position: absolute !important;
     top: 0;
     right: 0;
-  }
-  /* --- 項目名 --- */
-  .title-font {
-    text-shadow: 1px 1px 0 #bcbcbc;
   }
 }

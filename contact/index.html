@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Cache-Control" content="no-cache">
-  <meta name="description" content="『音酒ステーション』公式サイトです。
-  『音楽とお酒が好きな人が気軽に集える空間』をコンセプトに、熱いライブと美味しいお酒が楽しめるようなイベントになります。">
-  <title>音酒ステーション/Ticket</title>
+  <meta name="description" content="LIVE FIRST公式サイトです。
+  東京都内でのイベントの企画制作を行っております。">
+  <title>LIVE FIRST/お問い合わせ</title>
   <!--ファビコン-->
-  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="./favicon.ico">
 
   <script src="../lib/js/jquery-3.6.0.min.js"></script>
   <script src="../lib/js/bootstrap.min.js"></script>
   <script src="../lib/js/avantui.js"></script>
   <script src="../js/common.js"></script>
   <script src="../js/nav.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="../js/index.js"></script>
 
   <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../lib/css/avantui.min.css">
+  <link rel="stylesheet" type="text/css" href="../lib/css/bootflat.css.map">
+  <link rel="stylesheet" type="text/css" href="../lib/css/site.min.css">
 
   <link rel="stylesheet" type="text/css" href="../css/color.css">
   <link rel="stylesheet" type="text/css" href="../css/common.css">
@@ -29,29 +30,29 @@
 
 </head>
 <body class="bg-background">
-  <header class="bg-background">
+  <header class="bg-header">
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand top-font" href="../">
-        <img alt="OtoSakeSta-logo" src="../image/top-logo.png"/>
+      <a class="top-font" href="../index.html">
+        <img alt="top-logo" src="../image/logo.png"/>
       </a>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../about/">About
-            <div>イベントについて</div>
+          <a class="nav-link" href="../index.html#about">About
+            <div>事業内容</div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../event/">Event
-            <div>イベント一覧</div>
+          <a class="nav-link" href="../index.html#events">Event
+            <div>イベント</div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../ticket/">Ticket
-            <div>販売中のチケット</div>
+          <a class="nav-link" href="../index.html#service">Service
+            <div>サービス</div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../contact/">Contact
+          <a class="nav-link" href="./index.html">Contact
             <div>お問い合せ</div>
           </a>
         </li>
@@ -64,30 +65,83 @@
     <span></span>
   </div>
 
-  <main class="container">
-    <h1 class="title-font">お問い合せ</h1>
-    <div class="contact-message">
-      お客様のお問合せ、出演エントリーなどのお問い合せは下記のメールアドレスにお願いします。
-    </div>
-    <div class="contact-address">livefirst.event@gmail.com</div>
+  <main class="bg-image">
 
-    <div class="causion-message">
-      現在フォームはお問合せフォームを作成中です。メールアドレスにて対応いたします。<br>
-      ご不便をおかけしますが、ご了承ください。
-    </div>
-    <!-- 工事中 -->
-    <div class="d-none">
-      <form>
-        <h4>お問合せ内容</h4>
-        <input class="form-control"/>
-        <h4>お名前</h4>
+    <!-- CONTACT -->
+    <div id="contact">
+      <h1 class="title-font text-center">Contact</h1>
+      <form class="container mb-5" action="./contactform.php" method="post">
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="badge bg-primary">任意</span>
+            会社名
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" type="text" placeholder="会社名"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="badge bg-danger">必須</span>
+            氏名
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" type="text" placeholder="氏名" required/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="badge bg-danger">必須</span>
+            メールアドレス
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" type="email" placeholder="例) example@gmail.com" required/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="badge bg-danger">必須</span>
+            お問い合わせの種類
+          </div>
+          <div class="col-sm-8">
+            <select class="form-select">
+              <option selected>選択してください</option>
+              <option value="1">イベントに関して</option>
+              <option value="2">制作依頼</option>
+              <option value="3">出演に関して</option>
+              <option value="4">その他</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="badge bg-danger">必須</span>
+            お問い合わせ内容
+          </div>
+          <div class="col-sm-8">
+            <textarea class="form-control" rows="5"></textarea>
+          </div>
+        </div>
+
+        <div class="row submit-row">
+          <button class="btn btn-success btn-submit" type="submit">送信する</button>
+        </div>
       </form>
     </div>
     
   </main>
-
   <footer>
-    <div class="text-center text-white">音酒ステーション実行委員</div>
+    <div class="text-center">Copyrights 2022 LIVE FIRST All Rights Reserved.</div>
   </footer>
+  <!-- 上部に戻る -->
+  <button class="scroll-top" type="button">
+    <div class="triangle"></div>
+    TOP
+  </button>
+    
 </body>
 </html>
